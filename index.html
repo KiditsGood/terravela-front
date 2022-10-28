@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
 <header class="header">
@@ -39,68 +41,209 @@
             <a href="index.html" class="header__info-logo">
                 <img src="img/logo.svg" alt="" class="header__info-logo--image">
             </a>
-            <div class="header__item">
-                <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-geolocation"></i>
-                    <p class="header__item-value--text">Нелидовская, д. 20, к1</p>
+            <div class="header--items">
+                <div class="header__item">
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-geolocation"></i>
+                        <p class="header__item-value--text">Нелидовская, д. 20, к1</p>
+                    </div>
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-metro"></i>
+                        <p class="header__item-value--text">Метро «Сходненская»</p>
+                    </div>
                 </div>
-                <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-metro"></i>
-                    <p class="header__item-value--text">Метро «Сходненская»</p>
+                <div class="header__item">
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-clock"></i>
+                        <p class="header__item-value--text">Будни: с 14.00 до 21.00</p>
+                    </div>
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-clock"></i>
+                        <p class="header__item-value--text">Суббота: с 12.00 до 19.00</p>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-phone"></i>
+                        <a href="tel: +7 (499) 740-71-09" class="header__item-value--text phone">+7 (499) 740-71-09</a>
+                    </div>
+                    <div class="header__item-value">
+                        <i class="header__item-value--icon icon-icon-phone"></i>
+                        <a href="tel: +7 (906) 096-55-34" class="header__item-value--text phone">+7 (906) 096-55-34</a>
+                    </div>
                 </div>
             </div>
-            <div class="header__item">
+            <div class="header__mobile">
+                <a href="tel: +7 (906) 096-55-34" class="header__mobile-phone">
+                    <i class="header__mobile-phone--icon icon-icon-phone"></i>
+                </a>
                 <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-clock"></i>
-                    <p class="header__item-value--text">Будни: с 14.00 до 21.00</p>
+                    <i class="header__item-value--icon icon-icon-login"></i>
+                    <a class="header__item-value--text user">Вход</a>
                 </div>
-                <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-clock"></i>
-                    <p class="header__item-value--text">Суббота: с 12.00 до 19.00</p>
+                <div id="header__mobile-burger">
+                    <span></span>
                 </div>
-            </div>
-            <div class="header__item">
-                <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-phone"></i>
-                    <a href="tel: +7 (499) 740-71-09" class="header__item-value--text phone">+7 (499) 740-71-09</a>
-                </div>
-                <div class="header__item-value">
-                    <i class="header__item-value--icon icon-icon-phone"></i>
-                    <a href="tel: +7 (906) 096-55-34" class="header__item-value--text phone">+7 (906) 096-55-34</a>
-                </div>
-            </div>
-            <div class="header__item-value">
-                <i class="header__item-value--icon icon-icon-login"></i>
-                <a class="header__item-value--text user">Вход</a>
             </div>
         </div>
         <div class="header__cat">
-            <a class="header__cat-item">Дошкольники</a>
-            <a class="header__cat-item">Младшие классы</a>
-            <a class="header__cat-item">Средние классы</a>
-            <a class="header__cat-item">Старшие классы</a>
-            <a class="header__cat-item">Студенты и взрослые</a>
+            <div class="header__hover">
+                <a class="header__cat-item">Дошкольники</a>
+                <div class="header__hover-block">
+                    <div class="header__sub">
+                        <a href="index.html" class="header__sub-item">Летний лагерь</a>
+                        <a href="index.html" class="header__sub-item">Мастер-классы</a>
+                        <a href="index.html" class="header__sub-item">Курсы английского</a>
+                        <a href="index.html" class="header__sub-item">Творчество</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hover">
+                <a class="header__cat-item">Младшие классы</a>
+                <div class="header__hover-block">
+                    <div class="header__sub">
+                        <a href="index.html" class="header__sub-item">Летний лагерь</a>
+                        <a href="index.html" class="header__sub-item">Мастер-классы</a>
+                        <a href="index.html" class="header__sub-item">Курсы английского</a>
+                        <a href="index.html" class="header__sub-item">Творчество</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hover">
+                <a class="header__cat-item">Средние классы</a>
+                <div class="header__hover-block">
+                    <div class="header__sub">
+                        <a href="index.html" class="header__sub-item">Летний лагерь</a>
+                        <a href="index.html" class="header__sub-item">Мастер-классы</a>
+                        <a href="index.html" class="header__sub-item">Курсы английского</a>
+                        <a href="index.html" class="header__sub-item">Творчество</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hover">
+                <a class="header__cat-item">Старшие классы</a>
+                <div class="header__hover-block">
+                    <div class="header__sub">
+                        <a href="index.html" class="header__sub-item">Летний лагерь</a>
+                        <a href="index.html" class="header__sub-item">Мастер-классы</a>
+                        <a href="index.html" class="header__sub-item">Курсы английского</a>
+                        <a href="index.html" class="header__sub-item">Творчество</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hover">
+                <a class="header__cat-item">Студенты и взрослые</a>
+                <div class="header__hover-block">
+                    <div class="header__sub">
+                        <a href="index.html" class="header__sub-item">Летний лагерь</a>
+                        <a href="index.html" class="header__sub-item">Мастер-классы</a>
+                        <a href="index.html" class="header__sub-item">Курсы английского</a>
+                        <a href="index.html" class="header__sub-item">Творчество</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile__nav">
+                <nav class="header__nav">
+                    <a class="header__nav-item">О центре</a>
+                    <a class="header__nav-item">Наша команда</a>
+                    <a class="header__nav-item">События</a>
+                    <a class="header__nav-item">Контакты</a>
+                </nav>
+                <div class="mobile__numbers">
+                    <div class="header__item">
+                        <div class="header__item-value">
+                            <i class="header__item-value--icon icon-icon-geolocation"></i>
+                            <p class="header__item-value--text">Нелидовская, д. 20, к1</p>
+                        </div>
+                        <div class="header__item-value">
+                            <i class="header__item-value--icon icon-icon-metro"></i>
+                            <p class="header__item-value--text">Метро «Сходненская»</p>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <div class="header__item-value">
+                            <i class="header__item-value--icon icon-icon-phone"></i>
+                            <a href="tel: +7 (499) 740-71-09" class="header__item-value--text phone">+7 (499) 740-71-09</a>
+                        </div>
+                        <div class="header__item-value">
+                            <i class="header__item-value--icon icon-icon-phone"></i>
+                            <a href="tel: +7 (906) 096-55-34" class="header__item-value--text phone">+7 (906) 096-55-34</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__socials">
+                    <a href="" target="_blank" class="header__socials-item">
+                        <i class="header__socials-item--icon icon-instagram"></i>
+                    </a>
+                    <a href="" target="_blank" class="header__socials-item">
+                        <i class="header__socials-item--icon icon-vector"></i>
+                    </a>
+                    <a href="" target="_blank" class="header__socials-item">
+                        <i class="header__socials-item--icon icon-vector-1"></i>
+                    </a>
+                    <a href="" target="_blank" class="header__socials-item">
+                        <i class="header__socials-item--icon icon-vector-2"></i>
+                    </a>
+                    <a href="" target="_blank" class="header__socials-item">
+                        <i class="header__socials-item--icon icon-vector-3"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
 <main class="wrapper">
     <section class="main">
         <div class="main__picture"></div>
-        <div class="main__slider">
-            <h1 class="main__slider-text">Пространство знаний
-                для всех возрастов!</h1>
-            <p class="main__slider-desc">У нас вы найдёте занятия для детей, подростков и взрослых по английскому языку и творческим направлениям.</p>
-            <a href="" class="main__slider-button button--green">Подобрать курс</a>
+        <div class="swiper slider--all">
             <div class="main__slider-arrows">
-                <p class="main__slider-arrows--text">1/4</p>
+                <i class="main__slider-arrows--prev icon-arrow-right"></i>
+                <p class="main__slider-arrows--text"><span>1</span>/<span>4</span></p>
                 <i class="main__slider-arrows--next icon-arrow-right"></i>
             </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="main__slider">
+                        <h1 class="main__slider-text">Пространство знаний
+                            для всех возрастов!</h1>
+                        <p class="main__slider-desc">У нас вы найдёте занятия для детей, подростков и взрослых по английскому языку и творческим направлениям.</p>
+                        <a href="" class="main__slider-button button--green">Подобрать курс</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main__slider">
+                        <h2 class="main__slider-text">Пространство знаний
+                            для всех возрастов!</h2>
+                        <p class="main__slider-desc">У нас вы найдёте занятия для детей, подростков и взрослых по английскому языку и творческим направлениям.</p>
+                        <a href="" class="main__slider-button button--green">Подобрать курс</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main__slider">
+                        <h2 class="main__slider-text">Пространство знаний
+                            для всех возрастов!</h2>
+                        <p class="main__slider-desc">У нас вы найдёте занятия для детей, подростков и взрослых по английскому языку и творческим направлениям.</p>
+                        <a href="" class="main__slider-button button--green">Подобрать курс</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main__slider">
+                        <h2 class="main__slider-text">Пространство знаний
+                            для всех возрастов!</h2>
+                        <p class="main__slider-desc">У нас вы найдёте занятия для детей, подростков и взрослых по английскому языку и творческим направлениям.</p>
+                        <a href="" class="main__slider-button button--green">Подобрать курс</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <section class="course">
+        <div class="course--yellow"></div>
+        <div class="course--shadow"></div>
         <p class="annotation">курсы</p>
         <div class="course__top">
-            <h1 class="course__top-title">Больше<span class="green--span"> 30 различных занятий </span>на любой вкус и возраст</h1>
+            <h2 class="course__top-title">Больше<span class="green--span"> 30 различных занятий </span>на любой вкус и возраст</h2>
             <img src="img/plane.svg" alt="" class="cours__top-plane">
         </div>
         <div class="course__tabs">
@@ -178,8 +321,9 @@
         </div>
     </section>
     <section class="about">
+        <div class="about--shadow"></div>
         <p class="annotation">о центре</p>
-        <h1 class="about__title">Терра ВЭЛА — это место, где учиться<span class="green--span"> легко и интересно</span></h1>
+        <h2 class="about__title">Терра ВЭЛА — это место, где учиться<span class="green--span"> легко и интересно</span></h2>
         <div class="about__info">
             <div class="about__info-item">
                 <img src="img/dir.png" class="about__dir">
@@ -195,14 +339,23 @@
                     <p class="gallery__text-item">Команда сотрудников была сформирована из людей, которые являются профессионалами своего дела и прошли тщательный отбор при приёме на работу. Все сотрудники близки по духу и полностью погружаются в свою работу.</p>
                 </div>
                 <div class="gallery__slider">
-                    <img src="img/about_gallery.png" alt="" class="gallery__slide-image">
+                    <div class="swiper next-slider">
+                        <div class="swiper-wrapper">
+                            <img src="img/about_gallery.png" alt="" class="gallery__slide-image swiper-slide">
+                            <img src="img/about_gallery.png" alt="" class="gallery__slide-image swiper-slide">
+                            <img src="img/about_gallery.png" alt="" class="gallery__slide-image swiper-slide">
+                        </div>
+                    </div>
+                    <i class="gallery__slider-prev icon-arrow-right-1"></i>
+                    <i class="gallery__slider-next icon-arrow-right-1"></i>
+
                 </div>
             </div>
             <a class="about__button button--green">Подробнее о центре</a>
         </div>
     </section>
     <section class="feedback">
-        <h1 class="feedback__title">Остались вопросы?</h1>
+        <h2 class="feedback__title">Остались вопросы?</h2>
         <p class="feedback__desc">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
         <form class="feedback__form">
             <input type="text" class="feedback__form-input" placeholder="Ваше имя" required/>
@@ -213,8 +366,12 @@
         <p class="feedback__privacy">Нажимая кнопку «Отправить данные», вы соглашаетесь с <a class="feedback__privacy-link">политикой обработки персональных данных</a></p>
     </section>
     <section class="reasons">
+        <div class="reasons--green"></div>
+        <div class="reasons--yellow"></div>
+        <div class="reasons--bot"></div>
+        <div class="reasons--left"></div>
         <p class="annotation">почему мы</p>
-        <h1 class="reasons__title">Качественное обучение с работой <span class="green--span">на результат</span></h1>
+        <h2 class="reasons__title">Качественное обучение с работой <span class="green--span">на результат</span></h2>
         <div class="reasons__grid">
             <div class="reasons__grid-item">
                 <p class="reason__title">Занятия для всех возрастов</p>
@@ -262,33 +419,54 @@
     </section>
     <section class="news">
         <p class="annotation">новости</p>
-        <h1 class="news__title">Не пропустите <span class="green--span">важные события</span> нашего учебного центра</h1>
-        <div class="news__slider">
-            <div class="news__slider-item">
-                <img src="img/slider1.png" alt="" class="news__slider-item--image">
-                <p class="news__slider-item--title">Ведётся запись на занятия</p>
-                <p class="news__slider-item--desc">Приглашаем детей и подростков на занятия в Учебный центр "Терра ВЭЛА" по следующим направлениям...</p>
-                <a class="news__slider-item--read">Читать далее</a>
-                <p class="news__slider-item--date">14.09.2022 г.</p>
-            </div>
-            <div class="news__slider-item">
-                <img src="img/slider2.png" alt="" class="news__slider-item--image">
-                <p class="news__slider-item--title">Праздник для всех</p>
-                <p class="news__slider-item--desc">Приглашаем детей и взрослых на праздник в честь начала учебного года "Вселенная Marvel" </p>
-                <a class="news__slider-item--read">Читать далее</a>
-                <p class="news__slider-item--date">31.08.2022 г.</p>
-            </div>
-            <div class="news__slider-item">
-                <img src="img/slider3.png" alt="" class="news__slider-item--image">
-                <p class="news__slider-item--title">Успейте оплатить по акции</p>
-                <p class="news__slider-item--desc">Выберите свою АКЦИЮ для занятия английским в мини-группе.</p>
-                <a class="news__slider-item--read">Читать далее</a>
-                <p class="news__slider-item--date">16.07.2022 г.</p>
+        <h2 class="news__title">Не пропустите <span class="green--span">важные события</span> нашего учебного центра</h2>
+        <div class="butt">
+            <i class="news--prev icon-arrow-right-1"></i>
+            <i class="news--next icon-arrow-right-1"></i>
+        </div>
+        <div class="swiper news--slider">
+            <div class="news__slider swiper-wrapper">
+                <div class="news__slider-item swiper-slide">
+                    <img src="img/slider1.png" alt="" class="news__slider-item--image">
+                    <p class="news__slider-item--title">Ведётся запись на занятия</p>
+                    <p class="news__slider-item--desc">Приглашаем детей и подростков на занятия в Учебный центр "Терра ВЭЛА" по следующим направлениям...</p>
+                    <a class="news__slider-item--read">Читать далее</a>
+                    <p class="news__slider-item--date">14.09.2022 г.</p>
+                </div>
+                <div class="news__slider-item swiper-slide">
+                    <img src="img/slider2.png" alt="" class="news__slider-item--image">
+                    <p class="news__slider-item--title">Праздник для всех</p>
+                    <p class="news__slider-item--desc">Приглашаем детей и взрослых на праздник в честь начала учебного года "Вселенная Marvel" </p>
+                    <a class="news__slider-item--read">Читать далее</a>
+                    <p class="news__slider-item--date">31.08.2022 г.</p>
+                </div>
+                <div class="news__slider-item swiper-slide">
+                    <img src="img/slider3.png" alt="" class="news__slider-item--image">
+                    <p class="news__slider-item--title">Успейте оплатить по акции</p>
+                    <p class="news__slider-item--desc">Выберите свою АКЦИЮ для занятия английским в мини-группе.</p>
+                    <a class="news__slider-item--read">Читать далее</a>
+                    <p class="news__slider-item--date">16.07.2022 г.</p>
+                </div>
+                <div class="news__slider-item swiper-slide">
+                    <img src="img/slider3.png" alt="" class="news__slider-item--image">
+                    <p class="news__slider-item--title">Успейте оплатить по акции</p>
+                    <p class="news__slider-item--desc">Выберите свою АКЦИЮ для занятия английским в мини-группе.</p>
+                    <a class="news__slider-item--read">Читать далее</a>
+                    <p class="news__slider-item--date">16.07.2022 г.</p>
+                </div>
+                <div class="news__slider-item swiper-slide">
+                    <img src="img/slider3.png" alt="" class="news__slider-item--image">
+                    <p class="news__slider-item--title">Успейте оплатить по акции</p>
+                    <p class="news__slider-item--desc">Выберите свою АКЦИЮ для занятия английским в мини-группе.</p>
+                    <a class="news__slider-item--read">Читать далее</a>
+                    <p class="news__slider-item--date">16.07.2022 г.</p>
+                </div>
             </div>
         </div>
     </section>
 </main>
 <footer class="footer">
+    <div class="footer--shadow"></div>
     <div class="footer--wrap">
         <div class="footer--top">
             <a href="index.html" class="footer__logo">
@@ -306,7 +484,7 @@
                         <a href="tel: +7 (906) 096-55-34" class="flex__item-value">+7 (906) 096-55-34</a>
                     </div>
                     <div class="flex__item">
-                        <i class="flex__item-icon"></i>
+                        <i class="flex__item-icon icon-icon-mail"></i>
                         <a href="mailto: welcome@terrawela.ru" class="flex__item-value">welcome@terrawela.ru</a>
                     </div>
                     <div class="footer__socials">
@@ -369,5 +547,10 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/mainTabs.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>
