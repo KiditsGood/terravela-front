@@ -1309,6 +1309,12 @@ a.flex__item-value:hover:after{
     align-items: center;
     gap: 15px;
 }
+.services__pseudo-check--button:hover:after{
+    transform: translateX(5px) rotate(-90deg);
+}
+.services__pseudo-check--button:hover{
+    background: #BCBCBC;
+}
 .services__pseudo-check--button:after{
     display: block;
     content: "\6d";
@@ -1319,6 +1325,7 @@ a.flex__item-value:hover:after{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
 }
 .cat__pluses{
     max-width: 1100px;
@@ -1570,6 +1577,86 @@ a.flex__item-value:hover:after{
 }
 .feed--serv{
     margin-bottom: 110px;
+}
+.cat__pluses-green{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+.cat__pluses-yellow{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: -1;
+}
+.rates__green{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    margin-top: 15%;
+}
+.rates__yellow{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.rates__double{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.rates__line{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: 20%;
+}
+.rates__triple{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: 20%;
+}
+.slider__shadow{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+}
+.cat__pluses-green, .cat__pluses-yellow, .rates__green, .rates__yellow, .rates__double, .rates__triple, .slider__shadow{
+    /*width: 100%;*/
+}
+.up{
+    position: fixed;
+    right: 10%;
+    bottom: 20%;
+    z-index: 2;
+}
+.up__outer{
+    background: #FFFFFF;
+    border: 2px solid #168430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 2;
+    transition: 0.2s;
+}
+.up__outer:hover{
+    background-color: #168430;
+    color: white;
+    cursor: pointer;
+}
+.up__outer:hover i{
+    color: white;
+}
+.up__outer i{
+    font-size: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
 }
 
 @media (max-width: 999px){
@@ -2078,6 +2165,9 @@ a.flex__item-value:hover:after{
     .footer{
         margin-top: auto;
     }
+    .cat__pluses-green, .cat__pluses-yellow, .rates__green, .rates__yellow, .rates__double, .rates__line, .rates__triple, .slider__shadow{
+        display: none;
+    }
 }
 @media (min-width: 1000px) and (max-width: 1140px){
     .header--top_wrap, .header--wrap, .main, .course, .about, .feedback, .reasons, .news, .footer--wrap, .services, .cat__pluses, .rates, .services__slider{
@@ -2103,5 +2193,10 @@ a.flex__item-value:hover:after{
     .serv--prev{
         bottom: -60px;
         left: 0;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1370px) {
+    .rates__green{
+        width: 100%;
     }
 }
